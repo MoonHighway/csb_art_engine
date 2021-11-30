@@ -1,4 +1,10 @@
-# Welcome to HashLips 👄
+# CSB Art Engine
+
+The main art engine used to generate all NFT art for the the CSB project.
+
+---
+
+# Forked from HashLips 👄
 
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/logo.png)
 
