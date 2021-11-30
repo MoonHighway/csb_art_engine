@@ -2,38 +2,32 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const network = NETWORK.eth;
-
-// General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const network = NETWORK.sol;
+const namePrefix = "Crypto Ski Bums";
+const description =
+  "Crypto Ski Bums is a community of rad individuals who prioritize ripping or shredding the gnar.";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  symbol: "CSB",
+  seller_fee_basis_points: 500, // 5% after market sales
+  external_url: "https://crypto-ski-bums.netlify.app/",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
+      address: "7ztELa9nnpkismFkX8Fnmgi2sm8xnvhB6ahsR9iEiTVB",
+      share: 50,
+    },
+    {
+      address: "BR6cpaonvRzuvwpDFcWScH1CDMxBtjU34GaVNvXhUBBc",
+      share: 50,
     },
   ],
 };
 
-// If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-    ],
+    growEditionSizeTo: 50,
+    layersOrder: [{ name: "Mountain" }, { name: "Skier" }, { name: "Quiver" }],
   },
 ];
 
